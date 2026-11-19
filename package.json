@@ -1,0 +1,17 @@
+{
+  "name": "private-video-call",
+  "version": "1.0.0",
+  "description": "Free, private 1-to-1 video calls (WebRTC). Runs on your laptop.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "tunnel": "npx -y cloudflared tunnel --url http://localhost:3000"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ws": "^8.23.0"
+  }
+}
